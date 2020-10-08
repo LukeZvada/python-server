@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 from animals import get_all_animals, get_single_animal, create_animal, delete_animal, update_animal
 from employees import get_single_employee, get_all_employees, delete_employee, update_employee
-from locations import get_single_location, get_all_locations, delete_location
+from locations import get_single_location, get_all_locations, delete_location, update_location
 
 # Here's a class. It inherits from another class.
 class HandleRequests(BaseHTTPRequestHandler):
@@ -123,6 +123,8 @@ class HandleRequests(BaseHTTPRequestHandler):
         elif resource == "employees":
             update_employee(id, post_body)
 
+        elif resource == "locations":
+            update_location(id, post_body)
 
         # Encode the new animal and send in response
         self.wfile.write("".encode())

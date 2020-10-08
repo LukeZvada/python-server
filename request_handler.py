@@ -3,7 +3,6 @@ from animals import get_all_animals, get_single_animal
 from employees import get_single_employee, get_all_employees
 from locations import get_single_location, get_all_locations
 
-
 # Here's a class. It inherits from another class.
 class HandleRequests(BaseHTTPRequestHandler):
     def parse_url(self, path):

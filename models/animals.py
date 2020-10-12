@@ -1,6 +1,7 @@
 class Animals: 
 
-    def __init__(self, name, species, locationId, customerId, status):
+    def __init__(self, id, name, species, locationId, customerId, status):
+        self.id = id
         self.name = name 
         self.species = species
         self.location = locationId

@@ -2,7 +2,6 @@ import sqlite3
 import json
 from models import Employee
 
-
 def get_all_employees():
 
     with sqlite3.connect("./kennel.db") as conn:

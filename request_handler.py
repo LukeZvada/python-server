@@ -169,9 +169,6 @@ class HandleRequests(BaseHTTPRequestHandler):
         # Encode the new animal and send in response
         self.wfile.write("".encode())
 
-    
-
-
 # This function is not inside the class. It is the starting
 # point of this application.
 def  main():
